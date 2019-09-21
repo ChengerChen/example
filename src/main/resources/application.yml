@@ -1,0 +1,28 @@
+server:
+  port: 8082
+person:
+  age: 25
+  gender: 男
+  name: Chenger
+  map:
+    a: haha
+    b: hehe
+    c: huhu
+  list:
+    - red
+    - 15${person.name:CHENGER}}
+    - 你好${random.uuid}
+  pets:
+    name: Boss Dog
+    kind: dog
+
+---
+server:
+  port: 8083
+spring:
+  profiles: dev
+---
+server:
+  port: 8084
+spring:
+  profiles: prod
